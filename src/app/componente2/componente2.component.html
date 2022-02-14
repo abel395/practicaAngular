@@ -1,39 +1,16 @@
 <div class="bg-danger ">
-    
-        <div class="toast-container">
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <img  class="rounded me-2" alt="tokyo ghoul">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small class="text-muted">just now</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                    Primer mensaje
-                </div>
-            </div>
-        
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <img  class="rounded me-2" alt="kimestu no yaiba">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small class="text-muted">2 seconds ago</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                Aquí me quedo si no me cierras
-                </div>
-            </div>
+      <p>Componente 2</p>
+      <p>{{curso1C2.nombre}}</p>
+      <p>{{curso1C2.descripcion}}</p>
+      <p>{{contadorC2}}</p>
+      <div class="col-6">
+        <div class="form-group">
+          <label for="usr">Nombre:</label>
+          <input id="usr" type="text" [(ngModel)]="curso1C2.nombre" class="form-control">
         </div>
-      
-
-      <div class="toast show">
-        <div class="toast-header">
-          Toast Header
-          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-        </div>
-        <div class="toast-body">
-          Some text inside the toast body
+        <div class="form-group">
+          <label for="desc">Descripcion:</label>
+          <input id="desc" type="text" [(ngModel)]="curso1C2.descripcion" class="form-control">
         </div>
       </div>
 </div>

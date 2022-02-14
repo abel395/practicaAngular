@@ -1,18 +1,16 @@
 <div class="bg-warning ">
-    <p>componente3 works!</p>
-    <hr>
-    <h1>{{title}}</h1>
-    <button (click)="num=num/2">/2</button>
-    <span>{{num}}</span>
-    <button (click)="num=num*2">*2</button>
-
-    <nav aria-label="...">
-        <ul class="pagination pagination-lg">
-          <li class="page-item active" aria-current="page">
-            <span class="page-link">1</span>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-        </ul>
-    </nav>
+  <p>Componente 3</p>
+  <p>{{curso2C3.nombre}}</p>
+  <p>{{curso2C3.descripcion}}</p>
+  <p>{{contadorC3}}</p>
+  <div class="col-6">
+    <div class="form-group">
+      <label for="usr2">Nombre:</label>
+      <input id="usr2" type="text" [(ngModel)]="curso2C3.nombre" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="desc2">Descripcion:</label>
+      <input id="desc2" type="text" [(ngModel)]="curso2C3.descripcion" class="form-control">
+    </div>
+  </div>
 </div>
